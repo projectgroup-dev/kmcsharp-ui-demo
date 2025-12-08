@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/template3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- FONT AWESOME (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+
+  <!------------------- Navigation Bar----------------------------- -->
+
+
+  <header class="kmc-header">
+    <div class="kmc-inner">
+
+      <!-- LEFT: Logo -->
+      <div class="kmc-left">
+        <a href="#" class="kmc-brand">
+          <div class="kmc-badge" aria-hidden="true">KMC</div>
+          <div class="kmc-title">
+            <span class="kmc-title-line1">KMCSHARP</span>
+            <small class="kmc-title-line2">Kolkata Municipal Corporation</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- CENTER: Nav -->
+      <nav class="kmc-nav" aria-label="Primary Navigation">
+        <ul class="kmc-menu">
+
+          <li class="kmc-item"><a class="kmc-link" href="#">Home</a></li>
+
+          <li class="kmc-item has-dropdown">
+            <button class="kmc-link kmc-btn-drop" aria-expanded="false">About<i class="fa fa-caret-down"
+                aria-hidden="true"></i></button>
+            <ul class="kmc-dropdown">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Mission & Vision</a></li>
+              <li><a href="#">Organization</a></li>
+            </ul>
+          </li>
+
+          <li class="kmc-item has-dropdown">
+            <button class="kmc-link kmc-btn-drop" aria-expanded="false">Services <i class="fa fa-caret-down"
+                aria-hidden="true"></i></button>
+            <ul class="kmc-dropdown kmc-dropdown-grid">
+              <li><a href="#"><strong>Water Supply</strong><span>Connections & billing</span></a></li>
+              <li><a href="#"><strong>Waste Management</strong><span>Pickup & schedules</span></a></li>
+              <li><a href="#"><strong>Property Tax</strong><span>Payments & receipts</span></a></li>
+              <li><a href="#"><strong>Certificates</strong><span>Birth/Death / Income</span></a></li>
+            </ul>
+          </li>
+
+          <li class="kmc-item"><a class="kmc-link" href="#">Blogs</a></li>
+
+          <li class="kmc-item"><a class="kmc-link" href="#">Projects</a></li>
+
+          <li class="kmc-item has-dropdown">
+            <button class="kmc-link kmc-btn-drop" aria-expanded="false">Tenders <i class="fa fa-caret-down"
+                aria-hidden="true"></i></button>
+            <ul class="kmc-dropdown">
+              <li><a href="#">Open Tenders</a></li>
+              <li><a href="#">Awarded</a></li>
+              <li><a href="#">Tender Archive</a></li>
+            </ul>
+          </li>
+
+          <li class="kmc-item"><a class="kmc-link" href="#">Gallery</a></li>
+          <li class="kmc-item"><a class="kmc-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- RIGHT: Actions -->
+      <div class="kmc-right">
+        <a class="kmc-cta kmc-login" href="#">Login</a>
+
+
+        <!-- Mobile toggle -->
+        <button class="kmc-hamburger" aria-label="Open menu" aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile drawer (hidden on desktop) -->
+    <div class="kmc-mobile-drawer" aria-hidden="true">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <details>
+            <summary>About</summary>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Mission</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Services</summary>
+            <ul>
+              <li><a href="#">Water Supply</a></li>
+              <li><a href="#">Waste Management</a></li>
+              <li><a href="#">Property Tax</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Projects</a></li>
+        <li>
+          <details>
+            <summary>Tenders</summary>
+            <ul>
+              <li><a href="#">Open</a></li>
+              <li><a href="#">Awarded</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a class="kmc-cta kmc-login" href="#">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!------------------- Navigation Bar-end---------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================================== start-banner-sec============================ -->
+
+
+
+  <!-- PREMIUM HERO (Template 5) -->
+  <section class="kmc-hero-section">
+    <div class="kmc-hero-inner">
+
+      <!-- LEFT: Text content -->
+      <div class="kmc-hero-left">
+        <div class="kmc-hero-pretitle">KMCSHARP • Public Services</div>
+
+        <h1 class="kmc-hero-title">
+          Reimagining Kolkata’s Civic Experience
+          <span class="kmc-hero-gradient">— smart, transparent, reliable</span>
+        </h1>
+
+        <p class="kmc-hero-lead">
+          A unified municipal platform delivering faster services and real-time
+          insights — built for citizens, governed with trust.
+        </p>
+
+        <div class="kmc-hero-ctas">
+          <a class="kmc-hero-cta-primary" href="#">Get Started</a>
+          <a class="kmc-hero-cta-outline" href="#">Explore Dashboard</a>
+        </div>
+
+        <ul class="kmc-hero-features" aria-hidden="true">
+          <li><i class="fa-solid fa-circle-check"></i> 95% services digitized</li>
+          <li><i class="fa-solid fa-clock"></i> 24×7 citizen support</li>
+          <li><i class="fa-solid fa-map-location-dot"></i> Real-time project tracking</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: Layered visual card -->
+      <div class="kmc-hero-right" aria-hidden="true">
+        <div class="kmc-hero-decor kmc-hero-decor-back"></div>
+
+        <div class="kmc-hero-card">
+          <div class="kmc-hero-card-head">
+            <div class="kmc-hero-card-title">Live Snapshot</div>
+            <div class="kmc-hero-badge">Trusted</div>
+          </div>
+
+          <div class="kmc-hero-card-body">
+            <div class="kmc-hero-stat">
+              <div class="kmc-hero-stat-num">1.2M</div>
+              <div class="kmc-hero-stat-label">Citizens served</div>
+            </div>
+
+            <div class="kmc-hero-stat">
+              <div class="kmc-hero-stat-num">842</div>
+              <div class="kmc-hero-stat-label">Active Projects</div>
+            </div>
+
+            <div class="kmc-hero-stat">
+              <div class="kmc-hero-stat-num">372</div>
+              <div class="kmc-hero-stat-label">Open Tenders</div>
+            </div>
+          </div>
+
+          <div class="kmc-hero-card-cta">
+            <a href="#" class="kmc-hero-card-btn">View full report</a>
+          </div>
+        </div>
+
+        <div class="kmc-hero-illustration">
+          <!-- Decorative SVG or image: replace with your asset -->
+          <img src="images/Road-Infrastructure.webp" alt="Kolkata infrastructure illustration" />
+        </div>
+
+        <div class="kmc-hero-decor kmc-hero-decor-front"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==================================end-banner-sec============================ -->
+
+
+
+  <!-- ---------------------------imp-person-sec----------------------------------- -->
+
+
+  <section class="imp-per-section">
+
+    <div class="imp-per-inner">
+
+      <h2 class="imp-per-title">Our Guiding Leadership</h2>
+      <p class="imp-per-subtitle">
+        Visionaries who lead the transformation of civic excellence across Kolkata.
+      </p>
+
+      <div class="imp-per-grid">
+
+        <!-- Person 1 -->
+        <div class="imp-per-card">
+          <span class="imp-per-glow"></span>
+          <div class="imp-per-ring"></div>
+
+          <div class="imp-per-photo">
+            <img src="images/cm.webp" alt="Chief Minister of West Bengal">
+          </div>
+
+          <div class="imp-per-info">
+            <h3 class="imp-per-name">Hon’ble Chief Minister</h3>
+            <div class="imp-per-role">Government of West Bengal</div>
+          </div>
+
+          <div class="imp-per-signature">Leadership • Vision • Progress</div>
+        </div>
+
+        <!-- Person 2 -->
+        <div class="imp-per-card">
+          <span class="imp-per-glow"></span>
+          <div class="imp-per-ring"></div>
+
+          <div class="imp-per-photo">
+            <img src="images/mayor.png" alt="Mayor of Kolkata">
+          </div>
+
+          <div class="imp-per-info">
+            <h3 class="imp-per-name">Hon’ble Mayor</h3>
+            <div class="imp-per-role">Kolkata Municipal Corporation</div>
+          </div>
+
+          <div class="imp-per-signature">Innovation • Integrity • Service</div>
+        </div>
+
+        <!-- Person 3 -->
+        <div class="imp-per-card">
+          <span class="imp-per-glow"></span>
+          <div class="imp-per-ring"></div>
+
+          <div class="imp-per-photo">
+            <img src="images/director.jpg" alt="Project Director – KMCSHARP">
+          </div>
+
+          <div class="imp-per-info">
+            <h3 class="imp-per-name">Project Director</h3>
+            <div class="imp-per-role">KMCSHARP Smart Mission</div>
+          </div>
+
+          <div class="imp-per-signature">Execution • Precision • Delivery</div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ---------------------------imp-person-sec-end---------------------------------- -->
+
+
+
+  <!-- ------------------------start-abt-section-------------------------------- -->
+
+
+  <section class="kmc-abt-wrapper">
+    <div class="kmc-abt-container">
+
+      <!-- LEFT SIDE -->
+      <div class="kmc-abt-left">
+
+        <div class="kmc-abt-badge">
+          <div class="kmc-abt-badge-title">About KMC SHARP</div>
+          <div class="kmc-abt-badge-sub">Smart Health Advanced Response Program</div>
+        </div>
+
+        <h2 class="kmc-abt-heading">
+          Transforming <span>Kolkata’s</span> Public Healthcare System
+        </h2>
+
+        <p class="kmc-abt-desc">
+          KMC SHARP is a flagship initiative under the Kolkata Municipal Corporation aimed at
+          revolutionizing the health infrastructure of the city.
+          Through digital innovation, centralised record systems, and AI-enabled analytics,
+          SHARP empowers citizens with faster, smarter, and more transparent healthcare services.
+        </p>
+
+        <ul class="kmc-abt-points">
+          <li><span class="kmc-abt-dot"></span> Centralised digital health management</li>
+          <li><span class="kmc-abt-dot"></span> Unified citizen health records</li>
+          <li><span class="kmc-abt-dot"></span> Real-time data dashboards for administrators</li>
+          <li><span class="kmc-abt-dot"></span> AI-driven analytics for decision making</li>
+        </ul>
+
+      </div>
+
+      <!-- RIGHT SIDE TIMELINE -->
+      <div class="kmc-abt-right">
+
+        <!-- Vertical Line -->
+        <div class="kmc-abt-line"></div>
+
+        <!-- Step 1 -->
+        <div class="kmc-abt-step">
+          <div class="kmc-abt-step-icon">01</div>
+          <div class="kmc-abt-step-content">
+            <h3 class="kmc-abt-step-title">Vision</h3>
+            <p class="kmc-abt-step-desc">
+              To build a cohesive, smart, and transparent digital health ecosystem for all
+              citizens of Kolkata under KMC’s jurisdiction.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="kmc-abt-step">
+          <div class="kmc-abt-step-icon">02</div>
+          <div class="kmc-abt-step-content">
+            <h3 class="kmc-abt-step-title">Mission</h3>
+            <p class="kmc-abt-step-desc">
+              To streamline medical services, records, and analytics with advanced technology
+              for improved governance and public experience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="kmc-abt-step">
+          <div class="kmc-abt-step-icon">03</div>
+          <div class="kmc-abt-step-content">
+            <h3 class="kmc-abt-step-title">Impact</h3>
+            <p class="kmc-abt-step-desc">
+              Enhancing efficiency across health departments, reducing paperwork, and enabling
+              data-driven decisions that shape citywide healthcare outcomes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ------------------------end-abt-section-------------------------------- -->
+
+
+
+
+  <!-- ====================================start-of-service-section============================= -->
+
+
+  <section class="kmc-ser-wrapper">
+    <div class="kmc-ser-leftbar">
+      <h2>Our<br>Key<br>Services</h2>
+      <div class="kmc-ser-accent"></div>
+    </div>
+
+    <div class="kmc-ser-content">
+
+      <div class="kmc-ser-item">
+        <div class="kmc-ser-ribbon"></div>
+        <h3>Urban Infrastructure Modernization</h3>
+        <p>High-impact civic development powered by digital transformation and structural planning.</p>
+      </div>
+
+      <div class="kmc-ser-item">
+        <div class="kmc-ser-ribbon"></div>
+        <h3>Smart Digital Governance</h3>
+        <p>Technology-driven governance with transparent, data-backed decision making.</p>
+      </div>
+
+      <div class="kmc-ser-item">
+        <div class="kmc-ser-ribbon"></div>
+        <h3>Citizen-Centric Public Services</h3>
+        <p>Seamless access, inclusive touchpoints, and digital-first government assistance.</p>
+      </div>
+
+      <div class="kmc-ser-item">
+        <div class="kmc-ser-ribbon"></div>
+        <h3>Intelligent Project Monitoring</h3>
+        <p>Real-time dashboards for tracking progress, KPIs, and development milestones.</p>
+      </div>
+
+      <div class="kmc-ser-item">
+        <div class="kmc-ser-ribbon"></div>
+        <h3>Data Security & Compliance</h3>
+        <p>Enterprise-grade protection for municipal data and governance workflows.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ====================================end-of-service-section============================= -->
+
+  <!-- ===================================start-of-notice-section============================= -->
+
+  <section class="kmc-notice-section">
+    <div class="kmc-notice-container">
+
+      <div class="kmc-notice-head">
+        <h2>Official Notices & Announcements</h2>
+        <p>Stay updated with important circulars, tenders, and administrative updates from KMC SHARP.</p>
+      </div>
+
+      <div class="kmc-notice-list">
+
+        <!-- Notice Item -->
+        <div class="kmc-notice-item">
+          <div class="kmc-notice-meta">
+            <span class="kmc-notice-date">12 Dec 2025</span>
+            <span class="kmc-notice-tag">Public Advisory</span>
+          </div>
+          <h3 class="kmc-notice-title">Scheduled System Maintenance for Smart Ward Dashboard</h3>
+          <p class="kmc-notice-desc">System upgrades will be conducted between 1:00 AM – 4:00 AM. Services may remain
+            temporarily unavailable.</p>
+          <a href="#" class="kmc-notice-link">Read More →</a>
+        </div>
+
+        <div class="kmc-notice-item">
+          <div class="kmc-notice-meta">
+            <span class="kmc-notice-date">08 Dec 2025</span>
+            <span class="kmc-notice-tag tender">Tender Update</span>
+          </div>
+          <h3 class="kmc-notice-title">Revised Guidelines for Civic Infrastructure Monitoring</h3>
+          <p class="kmc-notice-desc">Updated protocols for contractors & ward inspectors to ensure unified reporting
+            standards.</p>
+          <a href="#" class="kmc-notice-link">Read More →</a>
+        </div>
+
+        <div class="kmc-notice-item">
+          <div class="kmc-notice-meta">
+            <span class="kmc-notice-date">01 Dec 2025</span>
+            <span class="kmc-notice-tag alert">Important</span>
+          </div>
+          <h3 class="kmc-notice-title">Emergency Repair Workflow Activation for Ward 117</h3>
+          <p class="kmc-notice-desc">Rapid response teams deployed after pipeline disruption reported by residents.</p>
+          <a href="#" class="kmc-notice-link">Read More →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================end-of-notice-section============================= -->
+
+
+
+
+
+
+  <!-- ================================start-dash-board-section======================== -->
+
+  <section class="dash-high-section">
+    <div class="dash-high-bg"></div>
+
+    <div class="dash-high-container">
+
+      <h2 class="dash-high-title">Dashboard Highlights</h2>
+
+      <div class="dash-high-grid">
+
+        <div class="dash-high-card">
+          <div class="dash-high-icon"></div>
+          <h3>Active Users</h3>
+          <p>Real-time count of active system users</p>
+          <span class="dash-high-number">2,438</span>
+          <div class="dash-high-shine"></div>
+        </div>
+
+        <div class="dash-high-card">
+          <div class="dash-high-icon"></div>
+          <h3>Role Approvals</h3>
+          <p>Pending & completed access approvals</p>
+          <span class="dash-high-number">89%</span>
+          <div class="dash-high-shine"></div>
+        </div>
+
+        <div class="dash-high-card">
+          <div class="dash-high-icon"></div>
+          <h3>Policy Updates</h3>
+          <p>Latest compliance & security updates</p>
+          <span class="dash-high-number">12</span>
+          <div class="dash-high-shine"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================end-dash-board-section======================== -->
+
+
+  <!-- ========================start-features===================== -->
+
+  <section class="kmc-feat-wrapper">
+
+    <div class="kmc-feat-left">
+      <h2>
+        KMCSHARP<br>
+        <span>Smart Civic Initiatives</span>
+      </h2>
+      <p class="kmc-feat-intro">
+        Transforming Kolkata through next-generation digital governance, real-time monitoring,
+        and citizen-centric innovation—built for a smarter civic ecosystem.
+      </p>
+      <div class="kmc-feat-line"></div>
+    </div>
+
+    <div class="kmc-feat-wall">
+
+      <div class="kmc-feat-block">
+        <div class="kmc-feat-accent"></div>
+        <h3>AI-Powered Civic Dashboard</h3>
+        <p>Live updates on sanitation, traffic, drainage, and ward-level public services.</p>
+      </div>
+
+      <div class="kmc-feat-block">
+        <div class="kmc-feat-accent"></div>
+        <h3>Smart Grievance Resolution</h3>
+        <p>Fast-track issue reporting with tracking, escalation, and automated routing.</p>
+      </div>
+
+      <div class="kmc-feat-block">
+        <div class="kmc-feat-accent"></div>
+        <h3>Real-Time Project Monitoring</h3>
+        <p>Digital progress boards with KPIs for civic infrastructure & development works.</p>
+      </div>
+
+      <div class="kmc-feat-block">
+        <div class="kmc-feat-accent"></div>
+        <h3>Citizen Digital Identity</h3>
+        <p>Unified access to services through secure authentication and verification.</p>
+      </div>
+
+      <div class="kmc-feat-block">
+        <div class="kmc-feat-accent"></div>
+        <h3>Advanced Data Intelligence</h3>
+        <p>Predictive analytics for resource planning, emergency response, and governance.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================end-features===================== -->
+
+
+  <!-- ========================start-kmc-work===================== -->
+
+  <section class="kmc-wrk-wrap">
+    <div class="kmc-wrk-container">
+
+      <!-- Heading -->
+      <div class="kmc-wrk-heading">
+        <h2>Latest Work Initiatives</h2>
+        <p>High-impact projects executed under KMCSHARP — combining data, technology, and urban innovation.</p>
+      </div>
+
+      <!-- Grid -->
+      <div class="kmc-wrk-grid">
+
+        <!-- ITEM 1 -->
+        <div class="kmc-wrk-item large">
+          <img src="images/env-wrk1.jpg" alt="Initiative Image">
+          <div class="kmc-wrk-overlay"></div>
+          <div class="kmc-wrk-info">
+            <h3>Smart Road Monitoring</h3>
+            <p>Real-time defect detection, AI-assisted inspections, and workflow automation for better civic upkeep.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="kmc-wrk-item small">
+          <img src="images/env-wrk1.jpg" alt="Initiative Image">
+          <div class="kmc-wrk-overlay"></div>
+          <div class="kmc-wrk-info">
+            <h3>Ward-Level Digital Supervising</h3>
+            <p>Transparent task oversight and geo-tagged reporting directly accessible to the admin portal.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="kmc-wrk-item small horizontal">
+          <img src="images/env-wrk1.jpg" alt="Initiative Image">
+          <div class="kmc-wrk-overlay"></div>
+          <div class="kmc-wrk-info">
+            <h3>Sanitation Performance Analytics</h3>
+            <p>Daily performance audits with automated alerts and enhancement tracking.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="kmc-wrk-item tall">
+          <img src="images/env-wrk1.jpg" alt="Initiative Image">
+          <div class="kmc-wrk-overlay"></div>
+          <div class="kmc-wrk-info">
+            <h3>Emergency Civic Response Hub</h3>
+            <p>Instant escalation channels with departmental sync for faster response during critical events.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================end-kmc-work===================== -->
+
+
+
+
+
+
+  <!-- -------------------------------latest-news-------------------------------- -->
+
+
+
+  <section class="kmc-news-section">
+    <!-- Floating Particles -->
+    <div class="kmc-news-particles">
+      <span class="particle" style="--i:1;"></span>
+      <span class="particle" style="--i:2;"></span>
+      <span class="particle" style="--i:3;"></span>
+      <span class="particle" style="--i:4;"></span>
+      <span class="particle" style="--i:5;"></span>
+    </div>
+
+    <div class="kmc-news-container">
+
+      <!-- Header Row -->
+      <div class="kmc-news-header fade-in">
+        <h2>Latest News & Updates</h2>
+        <a href="/news" class="kmc-news-more">View All News →</a>
+      </div>
+
+      <div class="kmc-news-grid">
+
+        <!-- FEATURED NEWS -->
+        <div class="kmc-news-featured fade-in">
+          <div class="kmc-news-featured-img">
+            <img src="images/env1.webp" alt="Featured News">
+          </div>
+
+          <div class="kmc-news-featured-content">
+            <span class="kmc-news-category">Public Services</span>
+
+            <h3 class="kmc-news-title">
+              KMC Introduces Smart Monitoring For Sustainable Urban Living
+            </h3>
+
+            <p class="kmc-news-meta">May 28, 2025 • 4 min read</p>
+
+            <p class="kmc-news-desc">
+              Kolkata Municipal Corporation launches next-gen smart management systems
+              to improve real-time civic operations across boroughs, enhancing efficiency
+              and cleaner neighbourhoods.
+            </p>
+          </div>
+        </div>
+
+        <!-- SIDEBAR SMALL NEWS CARDS -->
+        <div class="kmc-news-side">
+
+          <div class="kmc-news-card fade-in">
+            <img src="images/env3.webp" alt="News">
+            <div>
+              <span class="kmc-news-card-cat">Health</span>
+              <h4>Citywide Health Checkup Camps Launched Across 40 Wards</h4>
+              <p class="kmc-news-card-meta">May 25, 2025 • 2 min read</p>
+            </div>
+          </div>
+
+          <div class="kmc-news-card fade-in">
+            <img src="images/env3.webp" alt="News">
+            <div>
+              <span class="kmc-news-card-cat">Environment</span>
+              <h4>Kolkata Welcomes 70 New Micro Green Zones This Year</h4>
+              <p class="kmc-news-card-meta">May 21, 2025 • 3 min read</p>
+            </div>
+          </div>
+
+          <div class="kmc-news-card fade-in">
+            <img src="images/env3.webp" alt="News">
+            <div>
+              <span class="kmc-news-card-cat">Utilities</span>
+              <h4>Real-Time Water Quality Portal Goes Live For Citizens</h4>
+              <p class="kmc-news-card-meta">May 20, 2025 • 2 min read</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- -------------------------------latest-news-end-------------------------------- -->
+
+
+
+  <!-- ==================================start-blog-section================================== -->
+
+  <section class="kmc-blog-section">
+    <div class="kmc-blog-container">
+
+      <!-- Section Header -->
+      <div class="kmc-blog-header">
+        <h2>Latest Blogs & Insights</h2>
+        <p>Explore news, environmental updates, and civic engagement stories from Kolkata & West Bengal.</p>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="kmc-blog-grid">
+
+        <!-- Blog Card 1 -->
+        <div class="kmc-blog-card kmc-blog-tilt">
+          <div class="kmc-blog-img">
+            <img src="images/env3.webp" alt="Blog Image">
+          </div>
+          <div class="kmc-blog-info">
+            <span class="kmc-blog-tag">Air Pollution</span>
+            <h3>Tackling Air Pollution</h3>
+            <p>Learn how KMC initiatives are improving air quality across the city.</p>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="kmc-blog-card kmc-blog-tilt">
+          <div class="kmc-blog-img">
+            <img src="images/env3.webp" alt="Blog Image">
+          </div>
+          <div class="kmc-blog-info">
+            <span class="kmc-blog-tag">Water Conservation</span>
+            <h3>Cleaning Kolkata’s Rivers</h3>
+            <p>Discover projects aimed at protecting our rivers and water bodies.</p>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="kmc-blog-card kmc-blog-tilt">
+          <div class="kmc-blog-img">
+            <img src="images/env3.webp" alt="Blog Image">
+          </div>
+          <div class="kmc-blog-info">
+            <span class="kmc-blog-tag">Urban Greenery</span>
+            <h3>Tree Plantation Drives</h3>
+            <p>See how KMC is promoting greenery and sustainable urban living.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View More Button -->
+      <div class="kmc-blog-viewmore">
+        <a href="/blog">View More Blogs</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==================================end-blog-section================================== -->
+
+
+  <!-- ==============================start-how-kmc-works======================= -->
+
+  <section class="kmc-work-section">
+    <div class="kmc-work-container">
+
+      <div class="kmc-work-header">
+        <h2>How We Work</h2>
+        <p>Understand the simple, effective process KMCSHARP uses to engage citizens and improve the city.</p>
+      </div>
+
+      <div class="kmc-work-steps">
+
+        <div class="kmc-work-step">
+          <div class="kmc-work-icon">📝</div>
+          <h3>1. Report</h3>
+          <p>Citizens report civic issues, environmental concerns, or suggest improvements via the portal.</p>
+        </div>
+
+        <div class="kmc-work-step">
+          <div class="kmc-work-icon">🔍</div>
+          <h3>2. Review</h3>
+          <p>KMC team reviews reports, verifies issues, and prioritizes action based on urgency and impact.</p>
+        </div>
+
+        <div class="kmc-work-step">
+          <div class="kmc-work-icon">⚙️</div>
+          <h3>3. Action</h3>
+          <p>Solutions are implemented: cleaning drives, maintenance, awareness campaigns, or policy updates.</p>
+        </div>
+
+        <div class="kmc-work-step">
+          <div class="kmc-work-icon">📈</div>
+          <h3>4. Feedback</h3>
+          <p>Citizens get updates on actions taken, and feedback is collected to continuously improve the process.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==============================end-how-kmc-works======================= -->
+
+
+  <!-- ===================================start-quick-link=============================== -->
+
+  <section class="qc-links">
+    <div class="qc-container">
+      <h2 class="qc-title">Quick Links</h2>
+
+      <div class="qc-grid">
+        <a href="#" class="qc-item">
+          <span class="qc-icon">🏠</span>
+          <span>Home</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">🧾</span>
+          <span>About Us</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">🛠️</span>
+          <span>Our Services</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">📑</span>
+          <span>Notice Board</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">💼</span>
+          <span>Tender</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">📸</span>
+          <span>Gallery</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">📍</span>
+          <span>Contact</span>
+        </a>
+
+        <a href="#" class="qc-item">
+          <span class="qc-icon">🧭</span>
+          <span>Report</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================start-quick-link=============================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =======================================start-faq-section======================================== -->
+
+  <section class="kmc-faq-contact-wrapper">
+
+    <!-- FAQ SECTION -->
+    <div class="kmc-faq-area">
+      <h2 class="kmc-faq-title">Frequently Asked Questions</h2>
+      <p class="kmc-faq-sub">Quick answers to your essential civic queries</p>
+
+      <div class="kmc-faq-list">
+
+        <div class="kmc-faq-item">
+          <button class="kmc-faq-q">How do I access the citizen dashboard?<span>+</span></button>
+          <div class="kmc-faq-a">You can log in using your registered mobile number and access all civic services under
+            one unified dashboard.</div>
+        </div>
+
+        <div class="kmc-faq-item">
+          <button class="kmc-faq-q">Where can I track my submitted service requests?<span>+</span></button>
+          <div class="kmc-faq-a">All service requests are visible in the "My Requests" panel with realtime status
+            updates.</div>
+        </div>
+
+        <div class="kmc-faq-item">
+          <button class="kmc-faq-q">How do I apply for trade licenses?<span>+</span></button>
+          <div class="kmc-faq-a">Trade Licenses can be applied directly through the online portal with guided steps and
+            document uploads.</div>
+        </div>
+
+        <div class="kmc-faq-item">
+          <button class="kmc-faq-q">Is helpline support available 24/7?<span>+</span></button>
+          <div class="kmc-faq-a">Yes, KMCSHARP offers round‑the‑clock grievance and emergency support.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT US SECTION -->
+    <div class="kmc-contact-area">
+      <h2 class="kmc-contact-title">Contact Us</h2>
+      <p class="kmc-contact-sub">We're here to assist you anytime</p>
+
+      <form class="kmc-contact-form">
+        <div class="kmc-field-row">
+          <input type="text" placeholder="Your Name" class="kmc-field" />
+          <input type="email" placeholder="Email Address" class="kmc-field" />
+        </div>
+
+        <div class="kmc-field-row">
+          <input type="text" placeholder="Phone Number" class="kmc-field" />
+          <input type="text" placeholder="Subject" class="kmc-field" />
+        </div>
+
+        <textarea class="kmc-message" placeholder="Type your message..."></textarea>
+
+        <button class="kmc-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+  <!-- =======================================end-faq-section======================================== -->
+
+
+  <!-- =======================================start-footer=========================================== -->
+
+
+  <!-- Newsletter Section -->
+  <section class="kmc-newsletter">
+    <div class="kmc-news-inner">
+      <div class="kmc-news-left">
+        <h2>Stay Updated With Latest News</h2>
+        <p>Subscribe to receive important notices, tenders, updates and announcements directly to your email.
+        </p>
+      </div>
+
+      <form class="kmc-news-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="kmc-footer">
+    <div class="kmc-footer-container">
+
+      <div class="kmc-footer-col kmc-about">
+        <h3>About KMC-Sharp</h3>
+        <p>Providing transparent services, public information, notices, tenders and digital support for Kolkata
+          Municipal projects.</p>
+      </div>
+
+      <div class="kmc-footer-col">
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="#">Notice Board</a></li>
+          <li><a href="#">Tender</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="kmc-footer-col">
+        <h3>Quick Info</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">RTI Information</a></li>
+        </ul>
+      </div>
+
+      <div class="kmc-footer-col kmc-contact">
+        <h3>Contact</h3>
+        <p>📍 Kolkata Municipal Corporation</p>
+        <p>☎ 1800-123-456</p>
+        <p>✉ support@kmcsharp.in</p>
+
+        <div class="kmc-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="kmc-footer-bottom">
+      © 2025 KMC-Sharp. All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+
+  <!-- ========================================end-footer============================================= -->
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+
+
+  <script>
+    
+    // Minimal JS for dropdown buttons + mobile drawer.
+    (function () {
+      // toggle aria-expanded for dropdown buttons for keyboard accessibility
+      document.querySelectorAll('.kmc-btn-drop').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', !expanded);
+          // close other dropdowns
+          document.querySelectorAll('.kmc-btn-drop').forEach(b => { if (b !== btn) b.setAttribute('aria-expanded', 'false') });
+        });
+      });
+
+      // mobile drawer toggle
+      const hamb = document.querySelector('.kmc-hamburger');
+      const drawer = document.querySelector('.kmc-mobile-drawer');
+      if (hamb && drawer) {
+        hamb.addEventListener('click', () => {
+          const open = hamb.getAttribute('aria-expanded') === 'true';
+          hamb.setAttribute('aria-expanded', !open);
+          drawer.style.display = open ? 'none' : 'block';
+          drawer.setAttribute('aria-hidden', open ? 'true' : 'false');
+          // lock body scroll when open
+          document.body.style.overflow = open ? '' : 'hidden';
+        });
+      }
+
+      // close dropdowns when clicking outside
+      document.addEventListener('click', (ev) => {
+        if (!ev.target.closest('.kmc-item')) {
+          document.querySelectorAll('.kmc-btn-drop').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        }
+      });
+    })();
+
+
+
+    //=============scroll-animation-latest-news-===================
+
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+
+
+
+    //===============faq=============
+
+    document.querySelectorAll('.kmc-faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const ans = q.nextElementSibling;
+        ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+
+</html>
