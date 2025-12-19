@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/template5.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+  <!-- =================================================
+START: GOVERNMENT UTILITY BAR
+WB Govt / NIC Standard
+================================================= -->
+  <div class="gov-utility-bar">
+    <div class="gov-utility-inner">
+
+      <!-- Left Accessibility -->
+      <div class="gov-utility-left">
+        <a href="#main-content" data-key="skip">Skip to Main Content</a>
+        <span>|</span>
+        <a href="#" data-key="screen_reader">Screen Reader Access</a>
+      </div>
+
+      <!-- Right Controls -->
+      <div class="gov-utility-right">
+        <button onclick="setFontSize('small')">A-</button>
+        <button onclick="setFontSize('normal')">A</button>
+        <button onclick="setFontSize('large')">A+</button>
+
+        <span class="divider"></span>
+
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('bn')">বাংলা</button>
+
+        <span class="divider"></span>
+
+        <a href="#" class="login-link" data-key="login">Login</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- =================================================
+END: GOVERNMENT UTILITY BAR
+================================================= -->
+
+
+
+
+
+  <!-- =================================================
+START: INSTITUTIONAL GOVERNMENT HEADER
+KMC-SHARP (WB Govt Standard)
+================================================= -->
+  <header class="gov-main-header">
+
+    <div class="gov-header-inner">
+
+      <!-- LEFT: Government Identity -->
+      <div class="gov-header-left">
+        <img src="images/wb-emblem.png" alt="Government of West Bengal Emblem" class="gov-emblem">
+
+        <div class="gov-title-text">
+          <span class="gov-small" data-key="gov_wb">
+            Government of West Bengal
+          </span>
+
+          <span class="gov-medium" data-key="kmc">
+            Kolkata Municipal Corporation
+          </span>
+
+          <h1 class="gov-project-title" data-key="sharp">
+            KMC-SHARP
+          </h1>
+
+          <p class="gov-tagline" data-key="tagline">
+            Smart Hub for Analytics, Resilience & Planning
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Project Authority -->
+      <div class="gov-header-right">
+        <img src="images/project-director.jpg" alt="Project Director, KMC-SHARP" class="gov-authority-img">
+
+        <span class="gov-authority-text" data-key="project_director">
+          Project Director<br>KMC-SHARP
+        </span>
+      </div>
+
+    </div>
+
+  </header>
+  <!-- =================================================
+END: INSTITUTIONAL GOVERNMENT HEADER
+================================================= -->
+
+
+
+
+
+  <!-- =================================================
+START: PRIMARY NAVIGATION (WB Govt / NIC Style)
+================================================= -->
+  <nav class="gov-primary-nav" role="navigation" aria-label="Primary Navigation">
+
+    <ul class="gov-nav-list">
+
+      <li><a href="#" class="active" data-key="nav_home">Home</a></li>
+      <li><a href="#" data-key="nav_about">About SHARP</a></li>
+      <li><a href="#" data-key="nav_objectives">Objectives</a></li>
+      <li><a href="#" data-key="nav_projects">Projects</a></li>
+      <li><a href="#" data-key="nav_reports">Reports</a></li>
+      <li><a href="#" data-key="nav_tenders">Tenders</a></li>
+      <li><a href="#" data-key="nav_notices">Notices</a></li>
+      <li><a href="#" data-key="nav_contact">Contact Us</a></li>
+
+    </ul>
+
+  </nav>
+  <!-- =================================================
+END: PRIMARY NAVIGATION
+================================================= -->
+
+
+
+
+
+
+  <!-- =================================================
+START: HERO & ANNOUNCEMENT SECTION (WB Govt Style)
+================================================= -->
+  <section class="gov-hero-section">
+
+    <div class="gov-hero-inner">
+
+      <!-- LEFT CONTENT -->
+      <div class="gov-hero-text">
+        <h1 data-key="hero_title">
+          KMC-SHARP
+        </h1>
+
+        <h2 data-key="hero_subtitle">
+          Smart Hub for Analytics, Resilience & Planning
+        </h2>
+
+        <p data-key="hero_desc">
+          A strategic initiative of Kolkata Municipal Corporation
+          to strengthen data-driven urban governance, climate
+          resilience planning, and infrastructure analytics.
+        </p>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="gov-hero-image">
+        <img src="images/kmc-city.jpg" alt="Kolkata Urban Planning">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ANNOUNCEMENT STRIP -->
+  <div class="gov-announcement-strip" role="region" aria-label="Latest Announcements">
+    <strong data-key="announce_label">Latest Announcement:</strong>
+    <marquee behavior="scroll" direction="left">
+      <span data-key="announce_text">
+        Submission of Monthly Urban Analytics Report – September 2025 |
+        GIS-based Infrastructure Mapping Circular |
+        EOI for Data Analytics Consultancy
+      </span>
+    </marquee>
+  </div>
+  <!-- =================================================
+END: HERO & ANNOUNCEMENT SECTION
+================================================= -->
+
+
+
+
+
+  <!-- =================================================
+START: CORE CONTENT – THREE COLUMN LAYOUT
+================================================= -->
+  <section class="gov-core-section">
+
+    <div class="gov-core-wrapper">
+
+      <!-- LEFT PANEL: SERVICES -->
+      <aside class="gov-panel gov-services">
+        <h3 data-key="services_title">Services</h3>
+        <ul>
+          <li><a href="#" data-key="srv1">Urban Analytics Dashboard</a></li>
+          <li><a href="#" data-key="srv2">Climate Resilience Planning</a></li>
+          <li><a href="#" data-key="srv3">GIS & Mapping Cell</a></li>
+          <li><a href="#" data-key="srv4">Data Requests</a></li>
+          <li><a href="#" data-key="srv5">Training & Capacity Building</a></li>
+        </ul>
+      </aside>
+
+      <!-- CENTER PANEL: NOTICES -->
+      <main class="gov-panel gov-notices">
+        <h3 data-key="notice_title">Latest Announcements</h3>
+
+        <ul class="gov-notice-list">
+          <li>
+            <span class="date">16-09-2025</span>
+            <a href="#">Submission of Monthly Urban Analytics Report</a>
+            <span class="new">NEW</span>
+          </li>
+          <li>
+            <span class="date">14-09-2025</span>
+            <a href="#">GIS-based Infrastructure Mapping Circular</a>
+          </li>
+          <li>
+            <span class="date">12-09-2025</span>
+            <a href="#">EOI for Data Analytics Consultancy</a>
+            <span class="new">NEW</span>
+          </li>
+          <li>
+            <span class="date">10-09-2025</span>
+            <a href="#">Urban Resilience Workshop Notice</a>
+          </li>
+        </ul>
+
+        <div class="gov-view-all">
+          <a href="#" data-key="view_all">View All Announcements »</a>
+        </div>
+      </main>
+
+      <!-- RIGHT PANEL: AUTHORITY -->
+      <aside class="gov-panel gov-authority">
+        <h3 data-key="authority_title">Project Authority</h3>
+
+        <div class="authority-box">
+          <img src="images/director.jpg" alt="Project Director">
+          <p><strong data-key="pd_title">Project Director</strong></p>
+          <p data-key="pd_name">KMC-SHARP</p>
+          <p data-key="pd_addr">
+            Kolkata Municipal Corporation<br>
+            5, S.N. Banerjee Road<br>
+            Kolkata – 700013
+          </p>
+        </div>
+      </aside>
+
+    </div>
+
+  </section>
+  <!-- =================================================
+END: CORE CONTENT
+================================================= -->
+
+
+
+  <!-- =================================================
+START: KEY INITIATIVES / PRIORITY PROGRAMMES
+================================================= -->
+  <section class="gov-initiative-section">
+
+    <div class="gov-initiative-wrapper">
+
+      <h2 data-key="initiative_title">
+        Key Initiatives & Priority Programmes
+      </h2>
+
+      <ul class="gov-initiative-list">
+
+        <li>
+          <h4 data-key="init1_title">Urban Analytics & Decision Support</h4>
+          <p data-key="init1_desc">
+            Data-driven monitoring and evaluation system to support
+            evidence-based urban governance under KMC-SHARP.
+          </p>
+        </li>
+
+        <li>
+          <h4 data-key="init2_title">Climate Resilience & Risk Planning</h4>
+          <p data-key="init2_desc">
+            Integrated planning framework addressing flood risk,
+            heat stress, and climate vulnerability in Kolkata.
+          </p>
+        </li>
+
+        <li>
+          <h4 data-key="init3_title">GIS-based City Infrastructure Mapping</h4>
+          <p data-key="init3_desc">
+            Comprehensive spatial mapping of civic assets to improve
+            service delivery and planning accuracy.
+          </p>
+        </li>
+
+        <li>
+          <h4 data-key="init4_title">Capacity Building & Training</h4>
+          <p data-key="init4_desc">
+            Training programmes for municipal officials in data analytics,
+            GIS tools, and smart planning practices.
+          </p>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+  <!-- =================================================
+END: KEY INITIATIVES / PRIORITY PROGRAMMES
+================================================= -->
+
+
+
+  <!-- =================================================
+START: LATEST TENDERS / EOI / NIQ
+================================================= -->
+  <section class="gov-tender-section">
+
+    <div class="gov-tender-wrapper">
+
+      <h2 data-key="tender_title">
+        Latest Tenders / EOI / NIQ
+      </h2>
+
+      <div class="gov-tender-list">
+
+        <div class="gov-tender-row gov-tender-head">
+          <span>Ref No</span>
+          <span>Description</span>
+          <span>Issue Date</span>
+          <span>Last Date</span>
+          <span>Document</span>
+        </div>
+
+        <div class="gov-tender-row">
+          <span>NIQ/SHARP/01/2025</span>
+          <span data-key="tender1_desc">
+            Engagement of Data Analytics Consultancy for KMC-SHARP
+          </span>
+          <span>15-09-2025</span>
+          <span>30-09-2025</span>
+          <span><a href="#">Download</a></span>
+        </div>
+
+        <div class="gov-tender-row">
+          <span>EOI/SHARP/02/2025</span>
+          <span data-key="tender2_desc">
+            Expression of Interest for GIS Infrastructure Mapping
+          </span>
+          <span>12-09-2025</span>
+          <span>28-09-2025</span>
+          <span><a href="#">Download</a></span>
+        </div>
+
+        <div class="gov-tender-row">
+          <span>NIQ/SHARP/03/2025</span>
+          <span data-key="tender3_desc">
+            Supply & Installation of Urban Data Monitoring Tools
+          </span>
+          <span>10-09-2025</span>
+          <span>25-09-2025</span>
+          <span><a href="#">Download</a></span>
+        </div>
+
+      </div>
+
+      <div class="gov-tender-footer">
+        <a href="#" data-key="view_all_tenders">
+          View All Tenders »
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- =================================================
+END: LATEST TENDERS / EOI / NIQ
+================================================= -->
+
+
+
+
+
+
+
+  <!-- =================================================
+START: OFFICIAL GOVERNMENT FOOTER (WB Govt / NIC)
+================================================= -->
+  <footer class="gov-footer">
+
+    <div class="gov-footer-top">
+
+      <div class="gov-footer-col">
+        <h4 data-key="footer_links">Important Links</h4>
+        <ul>
+          <li><a href="#">Government of West Bengal</a></li>
+          <li><a href="#">Kolkata Municipal Corporation</a></li>
+          <li><a href="#">WB Finance Department</a></li>
+          <li><a href="#">National Informatics Centre</a></li>
+        </ul>
+      </div>
+
+      <div class="gov-footer-col">
+        <h4 data-key="footer_help">Help</h4>
+        <ul>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Screen Reader Access</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+
+      <div class="gov-footer-col">
+        <h4 data-key="footer_legal">Legal</h4>
+        <ul>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Copyright Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="gov-footer-col">
+        <h4 data-key="footer_contact">Contact</h4>
+        <p>
+          KMC-SHARP Cell<br>
+          Kolkata Municipal Corporation<br>
+          S. N. Banerjee Road, Kolkata – 700013
+        </p>
+        <p>Email: kmcsharp@kmc.gov.in</p>
+      </div>
+
+    </div>
+
+    <div class="gov-footer-bottom">
+
+      <p data-key="footer_note">
+        This website is designed & developed by National Informatics Centre (NIC),
+        Government of India.
+      </p>
+
+      <p class="gov-footer-meta">
+        Last Updated: <span>16 September 2025</span> |
+        Visitor Count: <span>102345</span>
+      </p>
+
+    </div>
+
+  </footer>
+  <!-- =================================================
+END: OFFICIAL GOVERNMENT FOOTER
+================================================= -->
+
+
+
+
+
+
+
+</body>
+
+</html>

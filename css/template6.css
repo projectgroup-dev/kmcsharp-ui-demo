@@ -1,0 +1,826 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* =========================================
+STEP 1 – GOVERNMENT UTILITY TOP BAR
+WB Govt / NIC Compliant
+========================================= */
+
+.kmc-utility-bar {
+    background: #002c6b; /* WB Dark Blue */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.kmc-utility-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT & RIGHT LISTS */
+.kmc-utility-left,
+.kmc-utility-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kmc-utility-bar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.kmc-utility-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Font controls */
+.font-control a {
+    font-weight: 600;
+}
+
+/* Language switch */
+.lang-switch a {
+    font-weight: 700;
+}
+
+/* Login emphasis */
+.login-link a {
+    padding: 2px 6px;
+    border: 1px solid #ffffff;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 768px) {
+
+    .kmc-utility-inner {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .kmc-utility-left,
+    .kmc-utility-right {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+STEP 2 – MAIN GOVERNMENT HEADER
+WB Govt / NIC Style
+========================================= */
+
+.kmc-gov-header {
+    background: #ffffff;
+    border-bottom: 3px solid #003a8f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kmc-gov-header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* LOGO */
+.kmc-gov-logo img {
+    height: 75px;
+}
+
+/* TITLE BLOCK */
+.kmc-gov-title h1 {
+    font-size: 14px;
+    margin: 0;
+    color: #003a8f;
+    font-weight: 600;
+}
+
+.kmc-gov-title h2 {
+    font-size: 18px;
+    margin: 2px 0;
+    color: #002c6b;
+    font-weight: 700;
+}
+
+.kmc-gov-title h3 {
+    font-size: 20px;
+    margin: 2px 0;
+    color: #000000;
+    font-weight: 800;
+}
+
+.kmc-gov-title p {
+    margin: 0;
+    font-size: 13px;
+    color: #555555;
+}
+
+/* AUTHORITY */
+.kmc-gov-authority {
+    margin-left: auto;
+    text-align: center;
+}
+
+.kmc-gov-authority img {
+    height: 65px;
+    border: 2px solid #003a8f;
+}
+
+.kmc-gov-authority span {
+    display: block;
+    font-size: 12px;
+    color: #003a8f;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 768px) {
+
+    .kmc-gov-header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kmc-gov-authority {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* =========================================
+STEP 3 – PRIMARY NAVIGATION
+WB Govt / NIC Style
+========================================= */
+
+.kmc-primary-nav {
+    background: #003a8f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kmc-nav-menu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.kmc-nav-menu > li {
+    position: relative;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.kmc-nav-menu > li:last-child {
+    border-right: none;
+}
+
+.kmc-nav-menu a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.kmc-nav-menu a:hover {
+    background: #002c6b;
+}
+
+/* SUBMENU */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: #ffffff;
+    border: 1px solid #cfd8e3;
+    list-style: none;
+    padding: 0;
+    display: none;
+    z-index: 999;
+}
+
+.submenu li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #003a8f;
+}
+
+.submenu a:hover {
+    background: #f2f6fb;
+}
+
+/* SHOW SUBMENU */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 768px) {
+
+    .kmc-nav-menu {
+        flex-direction: column;
+    }
+
+    .kmc-nav-menu > li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .submenu {
+        position: static;
+        border: none;
+    }
+}
+
+
+
+
+
+/* =========================================
+STEP 4 – MAIN CONTENT ZONE
+WB Govt / NIC Style
+========================================= */
+
+.kmc-main-zone {
+    background: #f4f6f8;
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kmc-main-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 15px;
+}
+
+/* COMMON PANEL STYLE */
+.kmc-left-panel,
+.kmc-center-panel,
+.kmc-right-panel {
+    background: #ffffff;
+    border: 1px solid #cfd8e3;
+    padding: 12px;
+}
+
+/* HEADINGS */
+.kmc-left-panel h3,
+.kmc-right-panel h3,
+.kmc-panel-header h3 {
+    font-size: 15px;
+    color: #003a8f;
+    border-bottom: 2px solid #0b5fa5;
+    padding-bottom: 6px;
+    margin-top: 0;
+}
+
+/* LEFT MENU */
+.kmc-left-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.kmc-left-panel li {
+    border-bottom: 1px dotted #bbb;
+}
+
+.kmc-left-panel a {
+    display: block;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.kmc-left-panel a:hover {
+    text-decoration: underline;
+}
+
+/* CENTER ANNOUNCEMENTS */
+.kmc-announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.kmc-announcement-list li {
+    font-size: 13px;
+    padding: 8px 0;
+    border-bottom: 1px dotted #bbb;
+}
+
+.kmc-announcement-list .date {
+    color: #555;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.kmc-announcement-list a {
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.kmc-announcement-list a:hover {
+    text-decoration: underline;
+}
+
+.new {
+    background: #c62828;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 6px;
+    margin-left: 6px;
+}
+
+.kmc-view-all {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.kmc-view-all a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b5fa5;
+}
+
+/* RIGHT PANEL */
+.kmc-right-panel img {
+    width: 100%;
+    border: 1px solid #cfd8e3;
+    margin: 10px 0;
+}
+
+.authority-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #003a8f;
+}
+
+.kmc-right-panel address {
+    font-size: 12px;
+    color: #555;
+    font-style: normal;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 992px) {
+    .kmc-main-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+STEP 5 – PRIORITY PROGRAMMES
+WB Govt Official Style
+========================================= */
+
+.kmc-programmes-section {
+    background: #ffffff;
+    padding: 25px 15px;
+}
+
+.kmc-programmes-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #cfd8e3;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #003a8f;
+    margin: 0 0 15px;
+    border-bottom: 2px solid #0b5fa5;
+    padding-bottom: 6px;
+}
+
+/* Individual Programme */
+.kmc-programme-item {
+    padding: 12px 0;
+    border-bottom: 1px dotted #bbb;
+}
+
+.kmc-programme-item:last-child {
+    border-bottom: none;
+}
+
+.kmc-programme-item h4 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    color: #003a8f;
+}
+
+.kmc-programme-item p {
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/* =========================================
+STEP 6 – TENDERS / EOI / RECRUITMENT
+WB Govt Official Style
+========================================= */
+
+.kmc-tender-section {
+    background: #f4f6f8;
+    padding: 25px 15px;
+}
+
+.kmc-tender-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #cfd8e3;
+    padding: 15px;
+}
+
+.kmc-tender-list {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.kmc-tender-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kmc-tender-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #bbb;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.kmc-tender-list li:last-child {
+    border-bottom: none;
+}
+
+.tender-date {
+    font-weight: 600;
+    color: #555;
+    margin-right: 6px;
+}
+
+.kmc-tender-list a {
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.kmc-tender-list a:hover {
+    text-decoration: underline;
+}
+
+.tender-new {
+    background: #d32f2f;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 6px;
+    margin-left: 6px;
+    border-radius: 3px;
+}
+
+/* Footer link */
+.kmc-tender-footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.kmc-tender-footer a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b5fa5;
+    text-decoration: none;
+}
+
+.kmc-tender-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 768px) {
+    .kmc-tender-wrapper {
+        padding: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+/* =========================================
+STEP 7 – PHOTO GALLERY / MEDIA
+WB Govt Official Style
+========================================= */
+
+.kmc-gallery-section {
+    background: #ffffff;
+    padding: 25px 15px;
+}
+
+.kmc-gallery-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #cfd8e3;
+    padding: 15px;
+}
+
+.kmc-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.kmc-gallery-grid a {
+    display: block;
+    border: 1px solid #cfd8e3;
+    background: #f4f6f8;
+}
+
+.kmc-gallery-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer */
+.kmc-gallery-footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.kmc-gallery-footer a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b5fa5;
+    text-decoration: none;
+}
+
+.kmc-gallery-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 992px) {
+    .kmc-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .kmc-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kmc-gallery-grid img {
+        height: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kmc-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kmc-gallery-grid img {
+        height: 160px;
+    }
+}
+
+
+
+
+
+/* =========================================
+STEP 8 – IMPORTANT LINKS / QUICK ACCESS
+WB Govt Official Style
+========================================= */
+
+.kmc-important-links-section {
+    background: #f4f6f8;
+    padding: 20px 15px;
+}
+
+.kmc-important-links-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #cfd8e3;
+    padding: 15px;
+}
+
+.kmc-links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.kmc-links-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kmc-links-grid li {
+    padding: 6px 0;
+    border-bottom: 1px dotted #b6c3d1;
+    font-size: 13px;
+}
+
+.kmc-links-grid li:last-child {
+    border-bottom: none;
+}
+
+.kmc-links-grid a {
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.kmc-links-grid a:hover {
+    text-decoration: underline;
+    color: #0b5fa5;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 992px) {
+    .kmc-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .kmc-links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+STEP 9 – GOVERNMENT FOOTER
+WB Govt / NIC Compliant Style
+========================================= */
+
+.kmc-gov-footer {
+    background: #e6e9ed;
+    border-top: 3px solid #0b5fa5;
+    font-size: 13px;
+}
+
+/* TOP LINKS */
+.kmc-footer-top {
+    background: #f4f6f8;
+    border-bottom: 1px solid #cfd8e3;
+}
+
+.kmc-footer-top ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.kmc-footer-top a {
+    color: #003a8f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.kmc-footer-top a:hover {
+    text-decoration: underline;
+}
+
+/* BOTTOM TEXT */
+.kmc-footer-bottom {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 15px;
+    text-align: center;
+    color: #333;
+}
+
+.kmc-footer-bottom p {
+    margin: 4px 0;
+}
+
+.kmc-footer-updated {
+    font-size: 12px;
+    color: #555;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 600px) {
+    .kmc-footer-top ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+
+
+
+
+
+/* =========================================

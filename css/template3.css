@@ -1,0 +1,1006 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* =========================================
+STEP 1 – GOVERNMENT UTILITY BAR
+WB Govt / NIC style
+========================================= */
+
+.kmc-utility-bar {
+    background: #154c79; /* WB Govt deep blue */
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.kmc-utility-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left */
+
+.kmc-search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  height: 22px;
+}
+
+.kmc-search-box input {
+  border: none;
+  padding: 2px 6px;
+  font-size: 12px;
+  width: 120px;
+  outline: none;
+}
+
+.kmc-search-box button i {
+  color: #555;
+}
+.kmc-search-box button {
+  /* background: #2f4f9d; */
+  border: none;
+  color: #ffffff;
+  padding: 0 8px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.kmc-search-box button:hover {
+  background: #243c7a;
+}
+
+/* Right */
+.utility-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.utility-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.utility-lang {
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+.font-controls button {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+
+
+.utility-login {
+    background: #ffffff;
+    color: #154c79 !important;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* =========================================
+Responsive – Utility Bar
+========================================= */
+@media (max-width: 768px) {
+    .kmc-utility-inner {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .utility-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+/* =========================================
+STEP 2 – MAIN GOVERNMENT HEADER
+WB Govt / NIC compliant design
+========================================= */
+
+.kmc-gov-header {
+    background: #0b5fa5; /* official WB blue */
+    color: #ffffff;
+    border-bottom: 4px solid #f2c94c; /* subtle govt accent */
+}
+
+.kmc-gov-header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.kmc-gov-logo img {
+    height: 72px;
+}
+
+/* Title */
+.kmc-gov-title {
+    text-align: center;
+    line-height: 1.3;
+}
+
+.kmc-gov-title .gov-line {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.kmc-gov-title h1 {
+    font-size: 28px;
+    margin: 4px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.kmc-gov-title p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* Authority Image */
+.kmc-gov-head {
+    text-align: center;
+}
+
+.kmc-gov-head img {
+    height: 80px;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+}
+
+.kmc-gov-head .head-name {
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+/* =========================================
+Responsive – Main Header
+========================================= */
+@media (max-width: 768px) {
+    .kmc-gov-header-inner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .kmc-gov-title h1 {
+        font-size: 22px;
+    }
+
+    .kmc-gov-logo img,
+    .kmc-gov-head img {
+        height: 60px;
+    }
+}
+
+
+
+
+
+/* =========================================
+STEP 3 – PRIMARY NAVIGATION
+WB Govt / NIC style
+========================================= */
+
+.kmc-primary-nav {
+    background: #ffffff;
+    border-bottom: 3px solid #0b5fa5;
+}
+
+.kmc-nav-list {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kmc-nav-list > li {
+    position: relative;
+    border-right: 1px solid #e0e0e0;
+}
+
+.kmc-nav-list > li:last-child {
+    border-right: none;
+}
+
+.kmc-nav-list > li > a {
+    display: block;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b5fa5;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.kmc-nav-list > li > a:hover {
+    background: #f2f6fb;
+    color: #003a8f;
+}
+
+/* Dropdown */
+.kmc-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    border: 1px solid #cfd8e3;
+    z-index: 1000;
+}
+
+.kmc-dropdown li {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.kmc-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.kmc-dropdown a {
+    padding: 10px 14px;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #003a8f;
+}
+
+.kmc-dropdown a:hover {
+    background: #eaf2fb;
+}
+
+/* Show dropdown on hover */
+.has-dropdown:hover .kmc-dropdown {
+    display: block;
+}
+
+/* =========================================
+Responsive – Navigation
+========================================= */
+@media (max-width: 992px) {
+
+    .kmc-nav-list {
+        flex-direction: column;
+    }
+
+    .kmc-nav-list > li {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .kmc-dropdown {
+        position: static;
+        border: none;
+    }
+}
+
+
+
+
+
+/* =========================
+LAYOUT WRAPPER
+========================= */
+.kmc-notice-section {
+    padding: 20px 15px;
+}
+
+.kmc-notice-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 15px;
+}
+
+/* =========================
+LEFT PANEL – E-SERVICES
+========================= */
+.kmc-eservices-panel {
+    background: #ffffff;
+    border: 1px solid #9bb7d3;
+}
+
+.kmc-eservices-header {
+    background: #0b5fa5;
+    padding: 10px;
+}
+
+.kmc-eservices-header h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.kmc-eservices-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.kmc-eservices-list li {
+    background: #e6eef7;
+    border: 1px solid #b8cbe3;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #003a8f;
+}
+
+/* =========================
+CENTER PANEL – NOTICE BOARD
+========================= */
+.kmc-notice-board {
+    background: #ffffff;
+    border: 1px solid #9bb7d3;
+}
+
+.kmc-notice-header {
+    background: #003a8f;
+    padding: 10px 15px;
+}
+
+.kmc-notice-header h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.kmc-notice-content {
+    padding: 10px 15px;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.kmc-notice-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kmc-notice-content li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #999;
+    font-size: 13px;
+}
+
+.notice-date {
+    font-weight: 600;
+    color: #444;
+    margin-right: 6px;
+}
+
+.kmc-notice-content a {
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.kmc-notice-content a:hover {
+    text-decoration: underline;
+}
+
+.notice-new {
+    background: #b30000;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 6px;
+    margin-left: 6px;
+}
+
+.kmc-notice-footer {
+    background: #eef3f9;
+    padding: 8px 15px;
+    text-align: right;
+}
+
+.kmc-notice-footer a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #003a8f;
+    text-decoration: none;
+}
+
+/* =========================
+RIGHT PANEL – LINKS
+========================= */
+.kmc-notice-side {
+    background: #ffffff;
+    border: 1px solid #9bb7d3;
+    padding: 10px;
+}
+
+.kmc-notice-side h4 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: #003a8f;
+    border-bottom: 2px solid #0b5fa5;
+    padding-bottom: 5px;
+}
+
+.kmc-notice-side ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kmc-notice-side li {
+    margin-bottom: 8px;
+}
+
+.kmc-notice-side a {
+    font-size: 13px;
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.kmc-notice-side a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+    .kmc-notice-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* =================================================
+HERO SECTION WRAPPER
+================================================= */
+.kmc-hero-section {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.kmc-hero-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2.4fr 1fr;
+    gap: 15px;
+}
+
+/* =================================================
+LEFT PANEL – ACTIVITY (EXACT IMAGE STYLE)
+================================================= */
+.kmc-left-activity {
+    display: flex;
+    align-items: stretch;
+}
+
+.activity-card {
+    width: 100%;
+    background: #e6eef7;
+  }
+  .activity-item-card {
+  padding: 18px 15px;
+
+}
+
+/* Title */
+.activity-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    margin-bottom: 18px;
+    background: #0b5fa5;
+    padding: 10px;
+}
+
+.activity-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.activity-title .dot {
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+/* Activity Items */
+.activity-item {
+    background: #ffffff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.activity-item img {
+    width: 44px;
+}
+
+.activity-item span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b5fa5;
+}
+
+/* =================================================
+CENTER PANEL – IMAGE SLIDER (UNCHANGED)
+================================================= */
+.kmc-hero-slider {
+    border: 1px solid #cfd8e3;
+    background: #e9eef4;
+    position: relative;
+}
+
+.kmc-hero-slider img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: none;
+}
+
+.kmc-hero-slider img:first-child {
+    display: block;
+}
+
+/* Slider Dots */
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.slider-dots .dot.active {
+    background: #0b5fa5;
+}
+
+/* =================================================
+RIGHT PANEL – INFO PANEL (UNCHANGED)
+================================================= */
+.kmc-hero-info {
+    border: 1px solid #cfd8e3;
+    background: #f8fafc;
+    padding: 15px;
+    text-align: center;
+}
+
+.info-logo img {
+    width: 110px;
+    margin-bottom: 12px;
+}
+
+.info-text h3 {
+    font-size: 14px;
+    color: #003a8f;
+    margin-bottom: 6px;
+}
+
+.info-text p {
+    font-size: 13px;
+    color: #222;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.info-address {
+    font-size: 12px;
+    color: #555;
+}
+
+/* =================================================
+RESPONSIVE
+================================================= */
+@media (max-width: 992px) {
+    .kmc-hero-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .kmc-left-activity {
+        order: 1;
+    }
+
+    .kmc-hero-slider img {
+        height: 260px;
+    }
+
+    .kmc-hero-slider {
+        order: 2;
+    }
+
+    .kmc-hero-info {
+        order: 3;
+    }
+}
+
+
+
+
+/* =========================================
+STEP 6 – IMPORTANT LINKS (WB Govt Style)
+========================================= */
+
+.kmc-quick-links {
+    background: #ffffff;
+    padding: 25px 15px;
+}
+
+.kmc-section-header {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.kmc-section-header h2 {
+    font-size: 18px;
+    color: #003a8f;
+    border-bottom: 2px solid #0b5fa5;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+/* GRID */
+.kmc-links-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* LINK BOX */
+.kmc-link-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #0b5fa5;
+    background: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    color: #003a8f;
+    font-weight: 600;
+}
+
+.kmc-link-box:hover {
+    background: #f2f6fb;
+}
+
+.link-icon {
+    font-size: 18px;
+}
+
+.link-text {
+    white-space: nowrap;
+}
+
+/* =========================================
+Responsive
+========================================= */
+@media (max-width: 992px) {
+    .kmc-links-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .kmc-links-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ==================kmc-tabs======================= */
+
+.kmc-tabs {
+    background-color: #e3f2fd; /* light blue WB govt style */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+
+
+.tabs-container {
+  max-width: 1100px;
+  margin: auto
+}
+
+
+  .tabs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .tab-button {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px 4px 0 0;
+    transition: background-color 0.3s;
+  }
+
+  .tab-button.active {
+    background-color: #0d47a1;
+  }
+
+  .tab-button:hover {
+    background-color: #0d47a1;
+  }
+
+  .tab-content {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .tab-content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .tab-content ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tab-content ul li a {
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: 500;
+  }
+
+  .tab-content ul li span {
+    color: #555;
+    font-size: 14px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+WB GOVT FOOTER – REVISED
+========================= */
+.wb-gov-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+/* CONTAINER */
+.wb-footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* IDENTITY STRIP */
+.wb-footer-identity {
+    background: #0b5fa5;
+    color: #ffffff;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+.identity-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.identity-right {
+    font-size: 12px;
+}
+
+/* LINKS AREA */
+.wb-footer-links {
+    background: #003a8f;
+    padding: 20px 0;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-link-block h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 1px solid #6f9fd1;
+    padding-bottom: 5px;
+}
+
+.footer-link-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link-block li {
+    margin-bottom: 6px;
+}
+
+.footer-link-block a {
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link-block a:hover {
+    text-decoration: underline;
+}
+
+/* LEGAL BAR */
+.wb-footer-legal {
+    background: #002c6b;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.legal-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .links-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .identity-flex,
+    .legal-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+

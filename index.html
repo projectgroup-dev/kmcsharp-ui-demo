@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC SHARP – Template Selection</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+
+            background: linear-gradient(135deg, #8CC1E9, #0055A0);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .kmc-index-box {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 50px 60px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            animation: fadeIn 0.8s ease;
+        }
+
+        .kmc-index-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .kmc-btn-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 260px;
+        }
+
+        .kmc-template-btn {
+            background: #12284B;
+            color: #fff;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        .kmc-template-btn:hover {
+            background: #0d1c36;
+            transform: translateY(-4px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .kmc-index-box {
+                width: 90%;
+                padding: 40px 30px;
+            }
+
+            .kmc-btn-box {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="kmc-index-box">
+        <div class="kmc-index-title">Choose Your Template</div>
+
+        <div class="kmc-btn-box">
+            <a href="template1.html" class="kmc-template-btn">Template 1</a>
+            <a href="template2.html" class="kmc-template-btn">Template 2</a>
+            <a href="template3.html" class="kmc-template-btn">Template 3</a>
+            <a href="template4.html" class="kmc-template-btn">Template 4</a>
+            <a href="template5.html" class="kmc-template-btn">Template 5</a>
+            <a href="template6.html" class="kmc-template-btn">Template 6</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

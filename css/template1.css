@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 15px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #003A8F;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  .kmc-title-area h1 {
+    font-size: 16px;
+  }
+
+  .kmc-title-area p {
+    font-size: 12px;
+  }
+
+  .kmc-main-nav a {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ============= TOP GOVERNMENT STRIP ========== */
+
+
+.kmc-gov-strip {
+    background: #003A8F;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.kmc-gov-strip-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kmc-gov-left span,
+.kmc-gov-right a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 6px;
+}
+
+.kmc-gov-right a:hover {
+    text-decoration: underline;
+}
+
+.kmc-divider {
+    margin: 0 6px;
+    opacity: 0.7;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .kmc-header {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .kmc-header-inner {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .kmc-header img {
+        height: 50px;
+    }
+
+    .kmc-header h1 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
+
+
+
+/* ============= TOP GOVERNMENT STRIP END ========== */
+
+
+
+
+/* ==============================
+   TOP UTILITY BAR STYLES
+   - Light background
+   - Small font
+   - Non-intrusive
+============================== */
+
+
+.kmc-topbar {
+  background: #f2f2f2;
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 13px;
+}
+
+.kmc-topbar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kmc-topbar a {
+  color: #003A8F;
+  text-decoration: none;
+}
+
+.kmc-topbar a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ==============================
+   MAIN GOVERNMENT HEADER
+   - White institutional background
+   - Strong blue divider
+   - NIC-compliant layout
+============================== */
+.kmc-gov-header {
+  background: #ffffff;
+  border-bottom: 3px solid #005BAC;
+}
+
+/* ==============================
+   HEADER INNER WRAPPER
+   - Three-column alignment
+   - Logo | Title | Officials
+============================== */
+.kmc-gov-header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ==============================
+   LOGO AREA
+============================== */
+.kmc-gov-logo img {
+  height: 70px;
+}
+
+/* ==============================
+   TITLE AREA
+============================== */
+.kmc-gov-title h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #003A8F;
+  font-weight: 600;
+}
+
+.kmc-gov-title h2 {
+  font-size: 22px;
+  margin: 2px 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.kmc-gov-title p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* ==============================
+   DIRECTOR / AUTHORITY IMAGES
+============================== */
+.kmc-main-fig {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kmc-main-fig .main-fig img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 6px solid #002a6b;
+  object-fit: cover;
+}
+
+/* ==============================
+   TABLET & MOBILE RESPONSIVE
+============================== */
+@media (max-width: 992px) {
+
+  .kmc-gov-header-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .kmc-main-fig {
+    margin-top: 12px;
+    justify-content: center;
+  }
+}
+
+/* ==============================
+   SMALL MOBILE OPTIMIZATION
+============================== */
+@media (max-width: 480px) {
+
+  .kmc-main-fig {
+    gap: 8px;
+  }
+
+  .kmc-main-fig .main-fig img {
+    width: 90px;
+    height: 90px;
+    border-width: 4px;
+  }
+
+  .kmc-gov-title h1 {
+    font-size: 18px;
+  }
+
+  .kmc-gov-title h2 {
+    font-size: 20px;
+  }
+
+  .kmc-gov-title p {
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* ==============================
+   PRIMARY NAVIGATION STYLES
+   - Blue govt strip
+   - High contrast text
+============================== */
+.kmc-gov-nav {
+  background: #005BAC;
+}
+
+.kmc-gov-nav ul {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.kmc-gov-nav li {
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.kmc-gov-nav a {
+  display: block;
+  padding: 12px 18px;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.kmc-gov-nav a:hover {
+  background: #003A8F;
+}
+
+
+
+/* ==============================
+   MAIN CONTENT LAYOUT
+============================== */
+.kmc-main-content {
+  background: #f5f7fa;
+  padding: 20px 0;
+  
+}
+
+
+.kmc-content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 22% 52% 26%;
+  gap: 15px;
+}
+
+
+
+
+
+
+/* ==============================
+   LEFT PANEL STYLES
+============================== */
+.kmc-left-panel {
+  background: #e8f0fa;
+  border: 1px solid #cbd6e2;
+  padding: 10px;
+}
+
+.kmc-panel-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #003A8F;
+  border-bottom: 2px solid #005BAC;
+  padding-bottom: 6px;
+}
+
+.kmc-left-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kmc-left-menu li {
+  border-bottom: 1px solid #cbd6e2;
+}
+
+.kmc-left-menu a {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.kmc-left-menu a:hover {
+  background: #dbe7f5;
+}
+
+
+
+
+
+/* ==============================
+   CENTER PANEL STYLES
+============================== */
+.kmc-center-panel {
+  background: #ffffff;
+  border: 1px solid #cbd6e2;
+  padding: 15px;
+}
+
+.kmc-announcement-list p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.kmc-announcement-list span {
+  font-size: 12px;
+  color: #555;
+}
+
+
+
+
+
+/* ==============================
+   RIGHT PANEL STYLES
+============================== */
+.kmc-right-panel {
+  background: #e8f0fa;
+  border: 1px solid #cbd6e2;
+  padding: 10px;
+}
+
+.kmc-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kmc-services-list li {
+  border-bottom: 1px solid #cbd6e2;
+}
+
+.kmc-services-list a {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #003A8F;
+}
+
+.kmc-services-list a:hover {
+  background: #dbe7f5;
+}
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE: TABLET & MOBILE
+===================================== */
+
+@media (max-width: 992px) {
+
+  .kmc-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Order for govt usability */
+  .kmc-center-panel {
+    order: 1;
+  }
+
+  .kmc-left-panel {
+    order: 2;
+  }
+
+  .kmc-right-panel {
+    order: 3;
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  .kmc-panel-title {
+    font-size: 15px;
+  }
+
+  .kmc-left-menu a,
+  .kmc-services-list a {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .kmc-announcement-list p {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   FOOTER STYLING (GOVT STANDARD)
+===================================== */
+
+.kmc-footer {
+    background: #003A8F; /* Govt Blue */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Top Section */
+.kmc-footer-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Footer Columns */
+.kmc-footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 6px;
+}
+
+.kmc-footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e6e6e6;
+}
+
+/* Footer Links */
+.kmc-footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kmc-footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.kmc-footer-col ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.kmc-footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Bar */
+.kmc-footer-bottom {
+    background: #002a6b;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #dcdcdc;
+}
+
+
+
+
+/* =====================================
+   FOOTER RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+    .kmc-footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .kmc-footer-top {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
